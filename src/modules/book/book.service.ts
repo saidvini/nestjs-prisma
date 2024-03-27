@@ -25,6 +25,6 @@ export class BookService {
   }
 
   async findAll() {
-    this.prisma.book.findMany();
+    return this.prisma.book.findMany();
   }
 }
